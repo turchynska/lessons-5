@@ -1,0 +1,9 @@
+.listUsers{
+    list-style: none;
+}
+.titleUsers{
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,14 +1,13 @@
 .appContainer{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .main{
-  list-style: none;
   flex: 1;
 }
-.header, .footer{
+
+.header .footer{
 background-color: darkgrey;
 padding: 10px;
 text-align: center;

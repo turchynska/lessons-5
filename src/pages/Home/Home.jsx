@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { getUsers } from '../services/api'
+import { getUsers } from '../../services/api'
+import styles from './Home.module.css'
 
 function Home() {
     const [ users, setUsers ] = useState([]);
@@ -10,8 +11,8 @@ function Home() {
 
     return (
         <div>
-            <h1>Users List</h1>
-            <ul>
+            <h1 className={styles.titleUsers}>Users List</h1>
+            <ul className={styles.listUsers}>
                 {users.map(user => (
                     <li key={user.id}>{user.name}</li>
                 ))}
